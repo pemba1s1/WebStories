@@ -1,13 +1,18 @@
 <div class="footer">
         <div class="footer1">
             <div class="contactUs">
-                <img src="img/msg.png" alt="">
+                <br>
+                <a href="#"><img src="img/contact.png" alt="" width="25%" style="padding-left: 75px"></a>
                 <p>Contact Us</p>
             </div>
             <div class="privacy">
+                <br>
+                <a href="#"><img src="img/privacy.png" alt="" width="25%" style="padding-left: 75px"></a>
                 <p>Privacy Policy</p>
             </div>
             <div class="aboutUs">
+                <br>
+                <a href="#"><img src="img/about.png" alt="" width="25%" style="padding-left: 75px"></a>
                 <p>About Us</p>
             </div>
         </div>
@@ -16,13 +21,18 @@
         </div>
         <div class="footer2">
             <div class="facebook">
+                <br>
+                <a href="#"><img src="img/facebook.png" alt="" width="25%" style="padding-left: 75px"></a>
                 <p>Facebook</p>
             </div>
             <div class="twitter">
-                <p>Twitter</p>
+                <br>
+                <a href="#"><img src="img/twitter.png" alt="" width="25%" style="padding-left: 75px"></a>
+                <p class="relative">Twitter</p>
             </div>
             <div class="discord">
-                <img src="img/discord.png" alt="">
+                <br>
+                <a href="#"><img src="img/discord.png" alt="" width="30%" style="padding-left: 70px"></a>
                 <p>Discord</p>
             </div>
         </div>

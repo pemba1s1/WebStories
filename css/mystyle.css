@@ -2,6 +2,7 @@ body{
     margin: auto;
     background-color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 /*--Start of header--*/
 .header{
@@ -212,9 +213,9 @@ th, td {
     width: 33%;
     height: 100%;
     float: left;
+
 }
 .footer p{
-    text-align: center;
     color:  rgb(204, 208, 212);
 }
 .footer a{
@@ -236,7 +237,7 @@ th, td {
 .prev{
     width: 10%;
     height: 100%;
-    float: left;
+    float: left; 
 }
 .title{
     text-align: center;
