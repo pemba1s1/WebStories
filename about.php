@@ -2,12 +2,12 @@
 require "header.php";
 ?>
     <div class="desc">
-    <h3>
+    <h2>
     <?php
         $novel_name=$_GET["novel_name"];
         echo $novel_name;
     ?>
-    </h3>
+    </h2>
     <h4>Summary</h4>
     <?php
         $sql="SELECT * from novel where novel_name='$novel_name'";
@@ -41,7 +41,7 @@ require "header.php";
                 <th width="80%">Title</th>
             </thead>
             <?php
-            $sql="SELECT * from $novel_name";
+            $sql="SELECT * from $novel_name ORDER BY chapter_no ASC";
             $result=mysqli_query($conn,$sql);
             foreach($result as $key=>$novel){
 

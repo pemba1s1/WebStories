@@ -217,6 +217,7 @@ th, td {
 }
 .footer p{
     color:  rgb(204, 208, 212);
+    text-align: center;
 }
 .footer a{
     text-decoration: none;

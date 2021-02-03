@@ -6,7 +6,6 @@ $chapter_no=$_GET['chapter_no'];
 $sql="SELECT * from $novel_name where chapter_no='$chapter_no'";
 $result=mysqli_query($conn,$sql);
 
-
 if($result){
     foreach($result as $key=>$novel){
         $content=$novel['content'];
@@ -35,7 +34,11 @@ else{
     <div class="read">
         <div class="read-title">
             <?php 
-                echo $chapter_title;
+                if(!$chapter_title){
+                    header('Location:about.php?novel_name='.$novel_name);
+                }
+                else
+                    echo $chapter_title;
             ?>
         </div>
         <div class="read-content">

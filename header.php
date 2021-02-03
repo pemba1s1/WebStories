@@ -1,14 +1,16 @@
 
 <?php
 session_start();
-include "php/dbConfig.php"
-
-
+include "php/dbConfig.php";
+if(isset($_GET["novel_name"]))
+    $title=$_GET["novel_name"];
+else
+    $title="WebStories";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>WebStories</title>
+    <title><?php echo($title); ?></title>
     <meta name="keywords" content="Novel"/>
     <meta name="description" content="Read Novels"/>
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
