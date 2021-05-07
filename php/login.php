@@ -13,6 +13,9 @@ if($_POST['submit']){
     	if($password==$check['password']){
             $pwdCheck=true;
         }
+        else{
+            $pwdCheck=false;
+        }
     	if(isset($pwdCheck)){
     		$_SESSION['user_name']=$check['user_name'];
     		$_SESSION['user_id']=$check['user_id'];
@@ -20,7 +23,7 @@ if($_POST['submit']){
     	}
     }
 }
-if (isset($pwdCheck)) {
+if ($pwdCheck==true) {
     		header("Location:../index.php");
     	}
 else{
