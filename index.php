@@ -8,7 +8,7 @@ require "header.php";
             <ul>
                 <li></li>
                 <?php
-                    $sql="SELECT * from announcement";
+                    $sql="SELECT * from announcement ORDER BY id desc";
                     $result=mysqli_query($conn,$sql);
                     $count=0;
                     foreach($result as $key=>$announcement){

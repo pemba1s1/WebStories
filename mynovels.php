@@ -38,7 +38,16 @@ if(!isset($_SESSION['login'])){
                         </a>
                 </td>
                 <td width="40%">
-                        <a href="update_chapter.php?novel_name=<?php echo $novel['novel_name'];?>">Update Chapter</a>
+                    <div class="outer">
+                        <a href="update_chapter.php?novel_name=<?php echo $novel['novel_name'];?>" >
+                            <button class="button1" style="width:40%;float: left;margin: 0px 0px 0px 0px">Update Chapter </button>
+                        </a>
+                        <form action="php/delete_novel.php" method="POST" >
+                            <input type="hidden" name="novel_name" value="<?php echo $novel['novel_name'];?>">
+                            <input type="hidden" name="user_id" value="<?php echo $novel['user_id']; ?>">
+                            <input type="submit" value="Delete Novel" name="delete" class="buttondelete">
+                    </div>
+                        
                 </td>
             </tr>
             <?php

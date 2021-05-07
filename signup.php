@@ -12,7 +12,7 @@ if(isset($_SESSION['login'])){
             Password:</br>
             <input type="password" name="password" class="form-space"></br>
             Confirm Password:</br>
-            <input type="password" name="password" class="form-space"></br>
+            <input type="password" name="con_password" class="form-space"></br>
             <input type="submit" name="submit" value="Sign Up" class="button1">
         </form>
     </div>

@@ -376,3 +376,25 @@ a{
     text-decoration: none;
     color: black;
 }
+.buttondelete{    
+    background-color: #ff4d4d;
+    color: white;
+    border: 2px solid #ff4d4d; /* Green */
+    font-size: 18px;
+    margin-top: 20px;
+    transition-duration: 0.4s;
+    width: 25%;
+    padding: 5px 5px 5px 5px;
+    border-radius: 8px;
+    margin: 0px 0px 0px 0px
+}
+.buttondelete:hover{
+    background-color: red;
+    border: 2px solid red; 
+    color: white;
+    display: inline-block;
+}
+.outer{
+    width: 100%;
+    text-align: center;
+}

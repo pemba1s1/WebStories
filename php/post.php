@@ -7,8 +7,15 @@ if(isset($_POST['add'])){
     $user_id=$_SESSION['user_id'];
     $title=$_POST['title'];
     $summary=$_POST['summary'];
-    $sql="INSERT into novel (user_id,user_name,summary,novel_name,status) values('$user_id','$username','$summary','$title',0)";
+    $dt = date('Y-m-d H:i:s');
+    $sql="INSERT into novel(user_id,user_name,summary,novel_name,status,updated_at) values('$user_id','$username','$summary','$title',0,'$dt')";
     $result=mysqli_query($conn,$sql);
+    if($result){
+        echo "pass1";
+    }
+    else{
+        echo "fail1";
+    }
     $createNovel="CREATE TABLE $title
     (
     ID int NOT NULL AUTO_INCREMENT,
@@ -19,11 +26,11 @@ if(isset($_POST['add'])){
     PRIMARY KEY (ID)
     )"; 
     $result1=mysqli_query($conn,$createNovel);
-    if($result && $result1){
+    if( $result1){
         header("Location:../mynovels.php");
     }
     else{
-        echo "failed 1";
+        echo "failed 2";
     }
 }
 
@@ -54,11 +61,23 @@ if(isset($_POST['update'])){
     $result2=mysqli_query($conn,$sql2);
     $result1=mysqli_query($conn,$sql1);
     $result=mysqli_query($conn,$sql);
+    if($result1){
+        echo "pass1";
+    }
+    else{
+        echo "failed1";
+    }
+    if($result2){
+        echo "pass2";
+    }
+    else{
+        echo "failed2";
+    }
     if($result){
         header("Location:../mynovels.php");
     }
     else{
-        echo "failed";
+        echo "failed3";
     }
 }
 
