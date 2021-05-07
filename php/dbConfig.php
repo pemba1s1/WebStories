@@ -1,5 +1,5 @@
 <?php
-$conn=mysqli_connect("127.0.0.2","webstor3_webstories","password","webstor3_webstories");
+$conn=mysqli_connect("remotemysql.com","L5EyaQbMh9","CbNm2enZTQ","L5EyaQbMh9");
 if(!$conn){
     die("Failed Connection".mysqli_connect_error());
 }
