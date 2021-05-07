@@ -25,7 +25,7 @@ require "header.php";
                         </a>
                     </td>
                     <?php
-                        $novel_name=$novel['novel_name'];
+                        $novel_name=strtolower($novel['novel_name']);
                         $sql1="SELECT * from $novel_name ORDER BY uploaded_at desc";
                         $result1=mysqli_query($conn,$sql1);
                         if($result1){
@@ -39,7 +39,7 @@ require "header.php";
                                 }
                             }
                             else{
-                                echo "failed";
+                                echo "faildaed";
                             }
                         ?>
                     </a>
