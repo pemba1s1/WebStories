@@ -46,6 +46,7 @@ if(!isset($_SESSION['login'])){
                             <input type="hidden" name="novel_name" value="<?php echo $novel['novel_name'];?>">
                             <input type="hidden" name="user_id" value="<?php echo $novel['user_id']; ?>">
                             <input type="submit" value="Delete Novel" name="delete" class="buttondelete">
+                        </form>
                     </div>
                         
                 </td>
