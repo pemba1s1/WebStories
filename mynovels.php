@@ -30,17 +30,17 @@ if(!isset($_SESSION['login'])){
 
         ?>
             <tr>
-                <td width="60%">
+                <td class="td1" width="60%">
                         <a href="about.php?novel_name=<?php echo $novel['novel_name'];?>">
                             <?php
                                 echo $novel['novel_name'];
                             ?>
                         </a>
                 </td>
-                <td width="40%">
+                <td class="td2" width="40%">
                     <div class="outer">
                         <a href="update_chapter.php?novel_name=<?php echo $novel['novel_name'];?>" >
-                            <button class="button1" style="width:40%;float: left;margin: 0px 0px 0px 0px">Update Chapter </button>
+                            <button class="button1" >Update Chapter </button>
                         </a>
                         <form action="php/delete_novel.php" method="POST" >
                             <input type="hidden" name="novel_name" value="<?php echo $novel['novel_name'];?>">

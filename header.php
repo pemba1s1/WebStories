@@ -14,35 +14,46 @@ else
     <meta name="keywords" content="Novel"/>
     <meta name="description" content="Read Novels"/>
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="myHeader">
         <div class="logo">
             <h1>WeSto</h1>
         </div>
         <div class="nav">
             <nav>
-                <div class="nav1"><a href="index.php">Home</a></div>
-                <div class="nav2"><a href="update.php">Updates</a></div>
-                <div class="nav3"><a href="novel.php">Novels</a></div>
+                <a href="index.php">Home</a>
+                <a href="update.php">Updates</a>
+                <a href="novel.php">Novels</a>
             </nav>
             <div class="auth">
                 <?php
                 if(isset($_SESSION['login'])){
                     
                 ?>
-                <div class="logout"><a href="php/logout.php">Log Out</a></div>
-                <div class="myprofile"><a href="mynovels.php">My Novels</a></div>
+                <a href="php/logout.php">Log Out</a>
+                <a href="mynovels.php">My Novels</a>
                 <?php
                 }
                 else{
                 ?>
-                <div class="login"><a href="login.php">Log In</a></div>
-                <div class="signup"><a href="signup.php">Sign Up</a></div>
+                <a href="login.php">Log In</a>
+                <a href="signup.php">Sign Up</a>
                 <?php
                 }
                 ?>
+                
             </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="img/menu.png"></a>
         </div>
     </div>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myHeader");
+      if (x.className === "header") {
+        x.className += " responsive";
+      } else {
+        x.className = "header";
+      }
+    }
+</script>
