@@ -9,6 +9,7 @@ require "header.php";
     ?>
     </h2>
     <h4>Summary</h4>
+    <div class="pre">
     <?php
         $sql="SELECT * from novel where novel_name='$novel_name'";
         $result=mysqli_query($conn,$sql);
@@ -18,6 +19,7 @@ require "header.php";
         }
 
     ?>
+    </div>
     <?php
         if(isset($_SESSION['login'])){
             if($user_id==$_SESSION['user_id']){

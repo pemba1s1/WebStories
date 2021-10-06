@@ -49,22 +49,24 @@ require "header.php";
                     $count=0;
                     foreach($result as $key=>$novel){
                 ?>
-                <li><a href="about.php?novel_name=<?php echo $novel['novel_name']; ?>">
-                    <?php 
-                        echo $novel['novel_name'];
-                        $count++;
-                        if($count>9){
-                            break;
+                <li>
+                    <a href="about.php?novel_name=<?php echo $novel['novel_name']; ?>">
+                        <?php 
+                            echo $novel['novel_name'];
+                            $count++;
+                            if($count>9){
+                                break;
+                            }
                         }
-                    }
-                    ?>
-                </a></li>
+                        ?>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
     <div class="content2">
         <u><h3>Most Recently Updated</h3></u>
-        <table width=100%>
+        <table class="tbl" width=100%>
             <thead class="thead">
                 <tr>
                     <th width=20%>Novel</th>

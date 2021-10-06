@@ -5,14 +5,15 @@ require "header.php";
 <div class="content2">
     <b><label class="mostread">Announcements</label></b>
             <ul>
-                <li></li>
+                
                 <?php
                     $sql="SELECT * from announcement";
                     $result=mysqli_query($conn,$sql);
                     $count=0;
                     foreach($result as $key=>$announcement){
                 ?>
-                <li><a href="">
+                <div class="underlined">
+                <li ><a href="read_announcement.php?announcement_id=<?php echo $announcement['id'];?>">
                     <?php 
                         echo $announcement['title'];
 
@@ -28,6 +29,7 @@ require "header.php";
                     ?>
                     </small>
                 </li>
+                </div>
                 <?php
                         
                     }

@@ -18,7 +18,7 @@ else{
 ?>
     <div class="panel">
         <div class="prev">
-            <a href="read.php?novel_name=<?php echo $novel_name;?>&chapter_no=<?php echo $chapter_no-1;?>"><img src="img/prev.png" width="30%"></a>
+            <a href="read.php?novel_name=<?php echo $novel_name;?>&chapter_no=<?php echo $chapter_no-1;?>"><img src="img/prev.svg"></a>
         </div>
         <div class="title">
             <a href="about.php?novel_name=<?php echo $novel_name;?>">
@@ -28,7 +28,7 @@ else{
             </a>
         </div>
         <div class="next">
-            <a href="read.php?novel_name=<?php echo $novel_name;?>&chapter_no=<?php echo $chapter_no+1;?>"><img src="img/next.png" width="30%"></a>
+            <a href="read.php?novel_name=<?php echo $novel_name;?>&chapter_no=<?php echo $chapter_no+1;?>"><img src="img/next.svg"></a>
         </div>
     </div>
     <div class="read">
@@ -38,7 +38,7 @@ else{
                     header('Location:about.php?novel_name='.$novel_name);
                 }
                 else
-                    echo $chapter_title;
+                    echo "Chapter ". $chapter_no ." ".$chapter_title;
             ?>
         </div>
         <div class="read-content">
@@ -49,10 +49,10 @@ else{
     </div>
     <div class="panel">
         <div class="prev">
-            <a href="read.php?novel_name=<?php echo $novel_name;?>&chapter_no=<?php echo $chapter_no-1;?>"><img src="img/prev.png" width="30%" ></a>
+            <a href="read.php?novel_name=<?php echo $novel_name;?>&chapter_no=<?php echo $chapter_no-1;?>"><img src="img/prev.svg"></a>
         </div>
         <div class="next">
-            <a href="read.php?novel_name=<?php echo $novel_name;?>&chapter_no=<?php echo $chapter_no+1;?>"><img src="img/next.png" width="30%"></a>
+            <a href="read.php?novel_name=<?php echo $novel_name;?>&chapter_no=<?php echo $chapter_no+1;?>"><img src="img/next.svg"></a>
         </div>
     </div>
 

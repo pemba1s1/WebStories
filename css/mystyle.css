@@ -1,5 +1,5 @@
 body{
-    margin: auto;
+    margin:auto;
     background-color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
     
@@ -7,14 +7,14 @@ body{
 /*--Start of header--*/
 .header{
     width: auto;
-    height: 100px;
+    height: 80px;
     background-color: rgb(39, 36, 36);
 }
 .logo{
     width: 20%;
-    height: 100px;
+    height: 100%;
     float: left;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 .logo h1{
     margin-left: 100px;
@@ -22,26 +22,26 @@ body{
 }
 .nav{
     width: 79%;
-    height: 100px;
+    height: 100%;
     float: right;
 }
 .nav .nav2{
     width: 20%;
     float: left;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 30px;
 }
 .nav .nav1{
     width: 20%;
     float: left;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 30px;
 }
 .nav .nav3{
     width: 20%;
     float: left;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 30px;
 }
 .auth{
     width: 30%;
@@ -58,19 +58,19 @@ body{
     width: 40%;
     float: left;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 30px;
 }
 .auth .logout{
     width:40%;
     float: left;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 30px;
 }
 .auth .myprofile{
     width:40%;
     float: left;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 30px;
 }
 .nav a{
     text-decoration: none;
@@ -88,8 +88,7 @@ a .active{
 .content1{
     width: auto;
     margin: 10px 10px 0px 10px;
-    height: 400px;
-    padding: 0px 15px 0px 15px;
+    height: 410px;
 }
 .announcement{
     width: 70%;
@@ -97,21 +96,33 @@ a .active{
     height: 100%;
     border: 1px solid;
 }
+.announcement ul{
+    padding-left: 15px;
+}
 .announcement li{
     list-style: none;
     padding-bottom: 8px;
     font-size: 17px;
 }
+.announcement .right{
+    text-align: right;
+    padding-right: 15px;
+}
 .right{
     text-align: right;
-    padding-right: 8px;
+    padding-right: 10px;
 }
 .announcement a{
     text-decoration: none;
     color: black;
+    border-bottom: 2px solid whitesmoke;
+    transition: 0.3s ease;
 }
 .announcement a:hover{
-    text-decoration: underline;
+    font-size: 18px;
+    border-color: rgb(64, 22, 112);
+    padding: 0 0 6px 0;
+    color: rgb(79, 73, 73);
 }
 .most{
     width: 29%;
@@ -123,21 +134,33 @@ a .active{
     font-size: 20px;
     padding: 15px 0px 0px 15px;
 }
+.most ul{
+    padding-left: 15px;
+    list-style-type: none;
+}
 .most li{
     font-size: 17px;
     padding-bottom: 8px;
+    list-style: none;
 }
 .most a{
     text-decoration: none;
     color: black;
+    border-bottom: 2px solid whitesmoke;
+    transition: 0.3s ease;
+    line-height: 20px;
 }
 .most a:hover{
-    text-decoration: underline;
+    font-size: 18px;
+    padding-bottom: 6px;
+    border-color: rgb(64, 22, 112);
+    color: rgb(79, 73, 73);
+
 }
 .content2{
     width: auto;
     min-height: 980px;
-    margin: 10px 10px 0px 10px;
+    margin: 20px 10px 0px 10px;
     padding: 0px 15px 0px 15px;
 }
 .content2 li{
@@ -145,12 +168,27 @@ a .active{
     padding-bottom: 8px;
     font-size: 17px;
 }
+.content2 .underlined{
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    transition: 0.3s ease;
+}
 .content2 a{
     text-decoration: none;
     color: black;
 }
-.content2 a:hover{
-    text-decoration: underline;
+.content2 .tbl a{
+    border-bottom: 2px solid whitesmoke;
+    transition: 0.3s ease;
+}
+.content2 .tbl a:hover{
+    border-color: rgb(64, 22, 112);
+    padding-bottom: 6px;
+}
+.content2 .underlined:hover{
+    border-color: rgb(64, 22, 112);
+    border-width: 3px;
 }
 .content2 .thead{
     text-align: left;
@@ -164,12 +202,12 @@ th, td {
 /*--Start of Footer--*/
 .footer{
     width: auto;
-    height: 200px;
-    margin-top: 10px;
+    height: 150px;
+    margin-bottom: 0px;
     background-color: rgb(39, 36, 36);
 }
 .footer1{
-    width: 48%;
+    width: 50%;
     height: 85%;
     float: left;
 }
@@ -177,25 +215,25 @@ th, td {
     width: 33%;
     height: 100%;
     float: left;
+    text-align: center;
+}
+.footer img{
+    width:25%;
 }
 .footer1 .privacy{
     width: 33%;
     height: 100%;
     float: left;
+    text-align: center;
 }
 .footer1 .aboutUs{
     width: 33%;
     height: 100%;
     float: left;
-}
-.divider{
-    width: 4%;
-    height: 75%;
-    float: left;
-    padding-top: 15px;
+    text-align: center;
 }
 .footer2{
-    width: 48%;
+    width: 50%;
     height: 85%;
     float: right;
 }
@@ -203,49 +241,59 @@ th, td {
     width: 33%;
     height: 100%;
     float: left;
+    text-align: center;
 }
 .footer2 .twitter{
     width: 33%;
     height: 100%;
     float: left;
+    text-align: center;
 }
 .footer2 .discord{
     width: 33%;
     height: 100%;
     float: left;
-
+    text-align: center;
 }
 .footer p{
     color:  rgb(204, 208, 212);
     text-align: center;
 }
-.footer a{
+.footer a{ 
     text-decoration: none;
     color:  rgb(204, 208, 212);
+    transition: 0.3s;
 }
 .footer a:hover{
-    color: white;
+    color:rgb(62, 47, 79);
+    font-size: 18px;
 }
 /*--End of footer--*/
 /*--Start of panel--*/
 .panel{
     width: auto;
-    height: 40px;
+    height: 60px;
     margin: 10px 10px 0px 10px;
     padding: 10px 15px 0px 15px;
     background-color: rgb(73, 71, 71);
 }
+.panel img{
+    width: 30%;
+}
 .prev{
+    padding-top:5px;
     width: 10%;
     height: 100%;
-    float: left; 
+    float: left;
 }
 .title{
+    padding-top:10px;
     text-align: center;
     float: left;
     width: 80%;
 }
 .next{
+    padding-top:5px;
     width: 10%;
     height: 100%;
     float: right;
@@ -260,14 +308,13 @@ th, td {
 /*--Start of reading page--*/
 .read{
     width: auto;
-    margin: 10px 10px 0px 10px;
+    margin: 0px 10px 0px 10px;
     min-height: 800px;
     padding: 0px 15px 0px 15px;
     white-space: pre-line;
 }
 .read .read-title{
     font-size: 18px;
-    margin-bottom: 8px;
 }
 .read .read-content{
     font-size: 17px;
@@ -297,24 +344,43 @@ th, td {
 .update a{
     text-decoration: none;
     color: black;
+    border-bottom: 2px solid whitesmoke;
+    transition: 0.3s ease;
 }
 .update a:hover{
-    color: rgb(73, 68, 68);
+    padding-bottom: 6px;
+    border-color: rgb(64, 22, 112);
+    color: rgb(79, 73, 73);
+
 }
 /*--End of update page--*/
 /*--Start of About Novel Page--*/
 .desc{
     width: auto;
     min-height: 300px;
-    margin: 10px 10px 0px 10px;
+    margin: 10px 50px 0px 50px;
     padding: 0px 15px 0px 15px;
+    
+}
+.desc .pre{
     white-space: pre-line;
 }
 .chap{
     width: auto;
     min-height: 600px;
-    margin: 10px 10px 0px 10px;
+    margin: 10px 50px 0px 50px;
     padding: 0px 15px 0px 15px;
+}
+.chap a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid whitesmoke;
+    transition: 0.3s ease;
+}
+.chap a:hover{
+    padding-bottom: 6px;
+    border-color: rgb(64, 22, 112);
+    color: rgb(79, 73, 73);
 }
 /*--End of about novel page--*/
 /*--Start of form--*/
