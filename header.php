@@ -14,11 +14,12 @@ else
     <meta name="keywords" content="Novel"/>
     <meta name="description" content="Read Novels"/>
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <link rel="icon" href="img/favicon.png">
 </head>
 <body>
     <div class="header" id="myHeader">
         <div class="logo">
-            <h1>WeSto</h1>
+            <img src="img/logo1.png">
         </div>
         <div class="nav">
             <nav>

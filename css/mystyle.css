@@ -1,7 +1,7 @@
 body{
     margin:auto;
     background-color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter", sans-serif;
     
 }
 /*--Start of header--*/
@@ -22,11 +22,10 @@ body{
     width: 20%;
     height: 100%;
     float: left;
-    padding-top: 0px;
 }
-.logo h1{
-    margin-left: 100px;
-    color: white;
+.logo img{
+    margin-left: 50px;
+    margin-top: 5px;
 }
 .nav{
     width: 79%;
@@ -450,6 +449,12 @@ a{
 }
 
 @media screen and (max-width: 990px){
+    .header .logo{
+        width: 30%
+    }
+    .header .nav{
+        width: 70%
+    }
     nav a{
         width: 19%;
     }
@@ -460,12 +465,12 @@ a{
         width: 50%;
     }
 }
-@media screen and (max-width: 830px){
-    .header .logo h1{
+@media screen and (max-width: 890px){
+    .header .logo img{
         margin-left:0px; 
         position: absolute;
         top: 0;
-        left: 20px;
+        left: 0;
     }
     nav a{
         width: 17%;
@@ -524,7 +529,7 @@ a{
     position: relative;
     height: 350px;
   }
-  .header.responsive .logo h1{
+  .header.responsive .logo img{
     margin-left: 50px;
   }
   .header.responsive .icon {
@@ -532,11 +537,11 @@ a{
     top: 0;
     right: 0;
   }
-  .header.responsive .logo h1{
+  .header.responsive .logo img{
     margin-left: 0px;
     position: absolute;
     top: 0;
-    left: 20px;
+    left: 0;
   }
   .header.responsive nav{
     display: block;
