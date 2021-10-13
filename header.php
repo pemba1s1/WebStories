@@ -49,8 +49,13 @@ else
                 if(isset($_SESSION['login'])){
                     
                 ?>
-                <a href="php/logout.php">Log Out</a>
                 <a href="mynovels.php">My Novels</a>
+                <div class="logout">
+                    <a href="php/logout.php">Log Out</a>
+                </div>
+                <div class="logout-hidden">
+                    <a href="php/logout.php"><i class='bx bx-log-out bx-md'></i></a>
+                </div>
                 <?php
                 }
                 else{
@@ -58,15 +63,9 @@ else
                 <button class="login" onclick="openForm()">
                     <i class='bx bxs-user-circle bx-md' ></i> <p>Login/Register</p>
                 </button>
-                <!-- <div class="form-popup" id="myForm">
-                    <form action="php/login.php" method="post">
-                        Username:</br>
-                        <input type="text" name="username" class="form-space" id='elem'></br>
-                        Password:</br>
-                        <input type="password" name="password" class="form-space" id='pass'></br>
-                        <input type="submit" name="submit" value="Log In" class="button1">
-                    </form>
-                </div> -->
+                <button class="login-hidden" onclick="openForm()">
+                    <i class='bx bxs-user-circle bx-md' ></i>
+                </button>
                 <div id="overlay" onclick="closeForm()">
                     
                 </div>

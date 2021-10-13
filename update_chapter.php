@@ -23,7 +23,7 @@ if(!isset($_SESSION['login'])){
         Content:
         <textarea name="content" id="" cols="30" rows="10"></textarea></br>
         <input type="hidden" value=<?php echo $novel_name;?> name="novel_name">
-        <input type="submit" value="Update" name="update" class="button1">
+        <input type="submit" value="Update" name="update" class="button1" style="width: 100px">
     </form>
 </div>
 

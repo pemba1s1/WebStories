@@ -40,7 +40,7 @@ if(!isset($_SESSION['login'])){
                 <td class="td2" width="40%">
                     <div class="outer">
                         <a href="update_chapter.php?novel_name=<?php echo $novel['novel_name'];?>" >
-                            <button class="button1" >Update Chapter </button>
+                            <button class="button1" style="float: left">Update Chapter </button>
                         </a>
                         <form action="php/delete_novel.php" method="POST" >
                             <input type="hidden" name="novel_name" value="<?php echo $novel['novel_name'];?>">

@@ -2,7 +2,7 @@ body{
     margin:auto;
     background-color: whitesmoke;
     font-family: "Inter", sans-serif;
-    
+    font-weight: 400;
 }
 /*--Start of header--*/
 .header{
@@ -68,13 +68,20 @@ a .active{
     color: rgb(204, 208, 212);
     float: right;
 }
+.nav .auth .login-hidden{
+    display: none;
+    background-color: rgb(39, 36, 36);
+    border: none;
+    color: rgb(204, 208, 212);
+    float: right;
+}
 .nav .auth i{
     color:rgb(204, 208, 212);
     position: absolute;
     right: 160px;
     top: 25px;
 }
-.nav .auth .login:hover, .nav .auth .login:hover i{
+.nav .auth .login:hover, .nav .auth .login:hover i,.nav .auth .login-hidden:hover i{
     color: white;
     cursor:pointer;
 }
@@ -86,6 +93,16 @@ a .active{
     font-size: 20px;
     margin-left: 10px;
 
+}
+.nav .auth .logout{
+    display: block;
+}
+.nav .auth .logout-hidden{
+    display: none;
+    color:rgb(204, 208, 212);
+}
+.nav .auth .logout-hidden i:hover{
+    color: white;
 }
 /*--End of Header--*/
 /*--Start of Content--*/
@@ -412,8 +429,9 @@ th, td {
     display: none;
     position: fixed;
     width: 400px;
-    bottom: 15%;
+    top: 15%;
     right: 35%;
+    left: 35%;
     border: 3px solid white;
     z-index: 9;
     border-radius: 1%;
@@ -422,8 +440,9 @@ th, td {
     display: none;
     position: fixed;
     width: 400px;
-    bottom: 15%;
+    top: 15%;
     right: 35%;
+    left: 35%
     border: 3px solid white;
     z-index: 9;
     border-radius: 1%;
@@ -515,49 +534,55 @@ textarea {
 /*--end of post--*/
 /*--start of button--*/
 .button1{
-    background-color: #4CAF50;
+    background-color: #04AA6D;
     color: white;
-    border: 2px solid #4CAF50; /* Green */
+    padding: 16px 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
     font-size: 18px;
-    margin-top: 20px;
-    transition-duration: 0.4s;
+    margin-top: 10px;
     width: 50%;
-    padding: 5px 5px 5px 5px;
-    border-radius: 8px;
-    margin: 0px 0px 0px 40px
+    transition-duration: 0.4s;
 }
 .button1:hover {
-    background-color: rgb(55, 141, 58);
-    border: 2px solid rgb(55, 141, 58); /* Green */
+    background-color: rgb(55, 141, 58); /* Green */
     color: white;
 }
-/*--end of button--*/
 a{
     text-decoration: none;
     color: black;
 }
-.buttondelete{    
+.buttondelete{
     background-color: #ff4d4d;
     color: white;
-    border: 2px solid #ff4d4d; /* Green */
+    padding: 16px 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
     font-size: 18px;
-    margin-top: 20px;
-    transition-duration: 0.4s;
+    margin-top: 10px;
     width: 40%;
-    padding: 5px 5px 5px 5px;
-    border-radius: 8px;
-    margin: 0px 0px 0px 0px
+    transition-duration: 0.4s;
 }
 .buttondelete:hover{
     background-color: red;
-    border: 2px solid red; 
     color: white;
     display: inline-block;
 }
+/*--end of button--*/
 .outer{
     width: 100%;
     text-align: center;
 }
+.outer a{
+    border: none;
+}
+
 
 @media screen and (max-width: 990px){
     .header .logo{
@@ -574,6 +599,28 @@ a{
     }
     .panel img{
         width: 50%;
+    }
+    .form-popup{
+        display: none;
+        position: fixed;
+        width: 400px;
+        top: 15%;
+        right: 30%;
+        left: 30%;
+        border: 3px solid white;
+        z-index: 9;
+        border-radius: 1%;
+    }
+    .register-popup{
+        display: none;
+        position: fixed;
+        width: 400px;
+        bottom: 15%;
+        right: 30%;
+        left: 30%;
+        border: 3px solid white;
+        z-index: 9;
+        border-radius: 1%;
     }
 }
 @media screen and (max-width: 890px){
@@ -598,18 +645,59 @@ a{
     .update table .td2{
         width: 60%;
     }
+    .form-popup{
+        display: none;
+        position: fixed;
+        width: 400px;
+        top: 15%;
+        right: 25%;
+        left: 25%;
+        border: 3px solid white;
+        z-index: 9;
+        border-radius: 1%;
+    }
+    .register-popup{
+        display: none;
+        position: fixed;
+        width: 400px;
+        bottom: 15%;
+        right: 25%;
+        left: 25%;
+        border: 3px solid white;
+        z-index: 9;
+        border-radius: 1%;
+    }
 }
 @media screen and (max-width: 610px){
-    .header nav, .header .auth{
+    .header .logo img{
+        margin-left:0px; 
+        position: absolute;
+        top: 0;
+        left: 25px;
+    }
+    .header nav{
         display: none;
+    }
+    .nav .auth .login{
+        display: none;
+    }
+    .nav .auth .login-hidden{
+        display: block;
+    }
+    .nav .auth i{
+        color:rgb(204, 208, 212);
+        position: absolute;
+        right: 30px;
+        top: 25px;
     }
     .header a.icon{ 
         display: block;
-        float: right;
+        float: left;
         padding-top: 30px;
         position: absolute;
         top: 0;
-        right:0;
+        left:10px;
+        cursor: pointer;
     }
     
     .footer{
@@ -633,15 +721,44 @@ a{
     .update table .td2{
         width: 65%;
     }
+    .form-popup{
+        display: none;
+        position: fixed;
+        width: 400px;
+        top: 15%;
+        right: 15%;
+        left: 15%;
+        border: 3px solid white;
+        z-index: 9;
+        border-radius: 1%;
+    }
+    .register-popup{
+        display: none;
+        position: fixed;
+        width: 400px;
+        bottom: 15%;
+        right: 15%;
+        left: 15%;
+        border: 3px solid white;
+        z-index: 9;
+        border-radius: 1%;
+    }
+    .nav a{
+        width: 60%
+    }
+    .nav .auth .logout{
+        display: none;
+    }
+    .nav .auth .logout-hidden{
+        display: block;
+        width: 20%;
+    }
 
 }
 @media screen and (max-width: 610px) {
   .header.responsive {
     position: relative;
-    height: 350px;
-  }
-  .header.responsive .logo img{
-    margin-left: 50px;
+    height: 230px;
   }
   .header.responsive .icon {
     position: absolute;
@@ -652,7 +769,7 @@ a{
     margin-left: 0px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 25px;
   }
   .header.responsive nav{
     display: block;
@@ -666,21 +783,9 @@ a{
     text-align: left;
     width: 100%;
   }
-  .header.responsive .auth{
-    display: block;
-    position: absolute;
-    top: 210px;
-    left: 20px;
-  }
-  .header.responsive .auth a{
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-  }
 
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 570px){
     .content1{
         margin: 10px 5px 10px 5px;
         height:820px;
@@ -707,5 +812,30 @@ a{
     }
     .update table .td2{
         width: 80%;
+    }
+    .form-popup{
+        display: none;
+        position: fixed;
+        width: 300px;
+        top: 15%;
+        right: 15%;
+        left: 15%;
+        border: 3px solid white;
+        z-index: 9;
+        border-radius: 1%;
+    }
+    .register-popup{
+        display: none;
+        position: fixed;
+        width: 300px;
+        bottom: 15%;
+        right: 15%;
+        left: 15%;
+        border: 3px solid white;
+        z-index: 9;
+        border-radius: 1%;
+    }
+    .nav .auth{
+        width: 60%;
     }
 }
