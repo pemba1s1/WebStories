@@ -16,6 +16,22 @@ else
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="img/favicon.png">
+
+    <script>        
+        openForm = () =>{
+            document.getElementById("myForm").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+        }
+        closeForm = () => {
+            document.getElementById("myForm").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+            document.getElementById("register").style.display = "none";
+        }
+        openRegister = () => {
+            document.getElementById("myForm").style.display = "none";
+            document.getElementById("register").style.display = "block";
+        }
+    </script>
 </head>
 <body>
     <div class="header" id="myHeader">
@@ -39,14 +55,54 @@ else
                 }
                 else{
                 ?>
-                <a href="login.php">Log In</a>
-                <a href="signup.php">Sign Up</a>
+                <button class="login" onclick="openForm()">
+                    <i class='bx bxs-user-circle bx-md' ></i> <p>Login/Register</p>
+                </button>
+                <!-- <div class="form-popup" id="myForm">
+                    <form action="php/login.php" method="post">
+                        Username:</br>
+                        <input type="text" name="username" class="form-space" id='elem'></br>
+                        Password:</br>
+                        <input type="password" name="password" class="form-space" id='pass'></br>
+                        <input type="submit" name="submit" value="Log In" class="button1">
+                    </form>
+                </div> -->
+                <div id="overlay" onclick="closeForm()">
+                    
+                </div>
+                <div class="form-popup" id="myForm">
+                  <form action="php/login.php" method="post" class="form-container">
+                    <h1>Login</h1>
+
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" id='elem' class="form-space" required>
+
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" id='pass' class="form-space" required>
+
+                    <input type="submit" name="submit" value="Log In" class="btn">
+                    <p>Dont have an account? <a onclick="openRegister()"> Register</a></p>
+                </form>
+                </div>
+                <div class="register-popup" id="register">
+                    <form action="php/signup.php" method="post" class="form-container">
+                        <h1>Register</h1>
+                        Username:</br>
+                        <input type="text" name="username" class="form-space"></br>
+                        Password:</br>
+                        <input type="password" name="password" class="form-space"></br>
+                        Confirm Password:</br>
+                        <input type="password" name="con_password" class="form-space"></br>
+                        <input type="submit" name="submit" value="Sign Up" class="btn">
+                    </form>
+                </div>
+    
                 <?php
                 }
                 ?>
                 
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="img/menu.png"></a>
+            <a class="icon" onclick="myFunction()"><img src="img/menu.png"></a>
         </div>
     </div>
 <script>

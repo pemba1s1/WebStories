@@ -10,7 +10,7 @@ if(isset($_POST['submit']))
         $sql="INSERT into user_auth(user_name,password) values('$username','$password')";
         $insert=mysqli_query($conn,$sql);
         if($insert){
-            header("Location:../login.php");
+            header("Location:../index.php");
         }
         else{
             echo "unsuccess";

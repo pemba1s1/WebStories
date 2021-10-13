@@ -2,17 +2,17 @@
         <div class="footer1">
             <div class="contactUs">
                 <br>
-                <a href="#"><i class='bx bx-phone-call bx-lg'></i>
+                <a href="#"><i class='bx bxs-phone-call bx-lg' ></i>
                 <p>Contact Us</p></a>
             </div>
             <div class="privacy">
                 <br>
-                <a href="#"><i class='bx bx-lock-alt bx-lg'></i>
+                <a href="#"><i class='bx bxs-lock-alt bx-lg'  ></i>
                 <p>Privacy Policy</p></a>
             </div>
             <div class="aboutUs">
                 <br>
-                <a href="#"><i class='bx bx-info-circle bx-lg' ></i>
+                <a href="#"><i class='bx bxs-info-circle bx-lg'  ></i>
                 <p>About Us</p></a>
             </div>
         </div>
