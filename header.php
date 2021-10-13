@@ -14,6 +14,7 @@ else
     <meta name="keywords" content="Novel"/>
     <meta name="description" content="Read Novels"/>
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="img/favicon.png">
 </head>
 <body>

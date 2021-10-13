@@ -197,9 +197,6 @@ th, td {
     float: left;
     text-align: center;
 }
-.footer img{
-    width:25%;
-}
 .footer1 .privacy{
     width: 33%;
     height: 100%;
@@ -259,11 +256,8 @@ th, td {
     background-color: rgb(73, 71, 71);
     
 }
-.panel img{
-    width: 60%;
-    height: 60px;
-}
 .prev{
+    padding-top: 5px;
     width: 10%;
     height: 100%;
     float: left;
@@ -275,6 +269,7 @@ th, td {
     width: 80%;
 }
 .next{
+    padding-top: 5px;
     width: 10%;
     height: 100%;
     float: right;
@@ -403,7 +398,6 @@ textarea {
 /*--end of post--*/
 /*--start of button--*/
 .button1{
-    float: left;
     background-color: #4CAF50;
     color: white;
     border: 2px solid #4CAF50; /* Green */
@@ -413,7 +407,7 @@ textarea {
     width: 50%;
     padding: 5px 5px 5px 5px;
     border-radius: 8px;
-    margin: 0px 0px 0px 0px
+    margin: 0px 0px 0px 40px
 }
 .button1:hover {
     background-color: rgb(55, 141, 58);

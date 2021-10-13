@@ -2,34 +2,34 @@
         <div class="footer1">
             <div class="contactUs">
                 <br>
-                <a href="#"><img src="img/contact.svg" alt="" >
+                <a href="#"><i class='bx bx-phone-call bx-lg'></i>
                 <p>Contact Us</p></a>
             </div>
             <div class="privacy">
                 <br>
-                <a href="#"><img src="img/privacy.svg" alt="" >
+                <a href="#"><i class='bx bx-lock-alt bx-lg'></i>
                 <p>Privacy Policy</p></a>
             </div>
             <div class="aboutUs">
                 <br>
-                <a href="#"><img src="img/about.svg" alt=""  >
+                <a href="#"><i class='bx bx-info-circle bx-lg' ></i>
                 <p>About Us</p></a>
             </div>
         </div>
         <div class="footer2">
             <div class="facebook">
                 <br>
-                <a href="#"><img src="img/facebook.svg" alt="">
+                <a href="#"><i class='bx bxl-facebook-circle bx-lg'></i>
                 <p>Facebook</p></a>
             </div>
             <div class="twitter">
                 <br>
-                <a href="#"><img src="img/twitter.svg" alt="" >
+                <a href="#"><i class='bx bxl-twitter bx-lg' ></i>
                 <p >Twitter</p></a>
             </div>
             <div class="discord">
                 <br>
-                <a href="#"><img src="img/discord.svg" alt="" >
+                <a href="#"><i class='bx bxl-discord-alt bx-lg' ></i>
                 <p>Discord</p></a>
             </div>
         </div>
