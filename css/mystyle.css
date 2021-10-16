@@ -141,12 +141,11 @@ a .active{
     text-decoration: none;
     color: black;
     border-bottom: 2px solid whitesmoke;
-    transition: 0.3s ease;
+    transition: 0.1s ease;
 }
 .announcement a:hover{
-    font-size: 18px;
-    border-color: rgb(64, 22, 112);
-    padding: 0 0 6px 0;
+    border-color: black;
+    padding: 0 0 3px 0;
     color: rgb(79, 73, 73);
 }
 .most{
@@ -172,13 +171,12 @@ a .active{
     text-decoration: none;
     color: black;
     border-bottom: 2px solid whitesmoke;
-    transition: 0.3s ease;
+    transition: 0.1s ease;
     line-height: 20px;
 }
 .most a:hover{
-    font-size: 18px;
-    padding-bottom: 6px;
-    border-color: rgb(64, 22, 112);
+    padding-bottom: 3px;
+    border-color: black;
     color: rgb(79, 73, 73);
 
 }
@@ -203,25 +201,42 @@ a .active{
     text-decoration: none;
     color: black;
 }
+.content2 .tbl{
+    border-collapse: collapse;
+}
 .content2 .tbl a, .content2 .right a{
     border-bottom: 2px solid whitesmoke;
     transition: 0.3s ease;
 }
 .content2 .tbl a:hover,.content2 .right a:hover{
-    border-color: rgb(64, 22, 112);
-    padding-bottom: 6px;
+    border-color: black;
+    padding-bottom: 3px;
 }
 .content2 .underlined:hover{
-    border-color: rgb(64, 22, 112);
+    border-color: black;
     border-width: 3px;
 }
 .content2 .thead{
     text-align: left;
 }
-th, td {
+th, tr{
     border-bottom: 1px solid #ddd;
+}
+th, td {
     text-align: justify;
     height: 50px;
+}
+.content2 .tbl-mobile{
+    display: none;
+    border-collapse: collapse;
+}
+.content2 .tbl-mobile a, .content2 .right a{
+    border-bottom: 2px solid whitesmoke;
+    transition: 0.3s ease;
+}
+.content2 .tbl-mobile a:hover,.content2 .right a:hover{
+    border-color: black;
+    padding-bottom: 3px;
 }
 /*--End of Content--*/
 /*--Start of Footer--*/
@@ -376,8 +391,8 @@ th, td {
     transition: 0.3s ease;
 }
 .update a:hover{
-    padding-bottom: 6px;
-    border-color: rgb(64, 22, 112);
+    padding-bottom: 3px;
+    border-color: black;
     color: rgb(79, 73, 73);
 
 }
@@ -406,8 +421,8 @@ th, td {
     transition: 0.3s ease;
 }
 .chap a:hover{
-    padding-bottom: 6px;
-    border-color: rgb(64, 22, 112);
+    padding-bottom: 3px;
+    border-color: black;
     color: rgb(79, 73, 73);
 }
 /*--End of about novel page--*/
@@ -628,7 +643,7 @@ a{
         width: 60%;
     }
 }
-@media screen and (max-width: 610px){
+@media screen and (max-width: 768px){
     .header .logo img{
         position: absolute;
         top: 0;
@@ -692,7 +707,7 @@ a{
     }
 
 }
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 768px) {
   .header.responsive {
     position: relative;
     height: 230px;
@@ -718,7 +733,7 @@ a{
   }
 
 }
-@media screen and (max-width: 570px){
+@media screen and (max-width: 650px){
     .content1{
         margin: 10px 5px 10px 5px;
         height:820px;
@@ -752,7 +767,24 @@ a{
     .register-popup{
         width: 300px;
     }
-    .nav .auth{
-        width: 60%;
+    .tbl{
+        display: none;
+    }
+    .content2 .tbl-mobile{
+        display: table;
+        width: 100%;
+    }
+    .content2 .tbl-mobile td{
+        height: 25px;
+        display: block;
+    }
+    .content2 .tbl-mobile .title-mobile{
+        font-weight: 600;
+        margin-top: 8px;
+    }
+    .content2 .tbl-mobile .chap-name-mobile{
+        font-size: 15px;
+        padding-top: 0;
+        line-height: 20px
     }
 }

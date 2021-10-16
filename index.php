@@ -71,8 +71,8 @@ require "header.php";
                 <tr>
                     <th width=20%>Novel</th>
                     <th width=40%>Chapter</th>
-                    <th width=20%>Author</th>
-                    <th width=20%>Updated At</th>
+                    <th width=15%>Author</th>
+                    <th width=25%>Updated At</th>
                 </tr>
             </thead>
            <?php
@@ -90,7 +90,7 @@ require "header.php";
                 <td>
                     <a href="read.php?novel_name=<?php echo $novel['novel_name'];?>&chapter_no=<?php echo $novel['chapter_no'];?>">
                         <?php
-                            echo $novel['chapter_name'];
+                            echo "Chapter ".$novel['chapter_no']." : ".$novel['chapter_name'];
                         ?>
                     </a>
                     
@@ -104,6 +104,37 @@ require "header.php";
                     <?php
                         echo $novel['updated_at'];
                     ?>
+                </td>
+            </tr>
+            <?php
+                $count++;
+                if($count>14){
+                    break;
+                }
+            
+            }
+            ?>
+        </table>
+        <table class="tbl-mobile">
+           <?php
+                $sql="SELECT * from time ORDER BY updated_at desc";
+                $result=mysqli_query($conn,$sql);
+                $count=0;
+                foreach($result as $key=>$novel){
+           ?>
+            <tr>
+                <td class="title-mobile">
+                    <a href="about.php?novel_name=<?php echo $novel['novel_name'];?>">
+                        <?php echo $novel['novel_name'];?>
+                    </a>
+                </td>
+                <td class="chap-name-mobile">
+                    <a href="read.php?novel_name=<?php echo $novel['novel_name'];?>&chapter_no=<?php echo $novel['chapter_no'];?>">
+                        <?php
+                            echo "Chapter ".$novel['chapter_no']." : ".$novel['chapter_name'];
+                        ?>
+                    </a>
+                    
                 </td>
             </tr>
             <?php
