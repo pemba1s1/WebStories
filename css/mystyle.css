@@ -1,3 +1,7 @@
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
 body{
     margin:auto;
     background-color: whitesmoke;
@@ -430,8 +434,8 @@ th, td {
     position: fixed;
     width: 400px;
     top: 15%;
-    right: 35%;
-    left: 35%;
+    left: 50%;
+    transform: translate(-50%, 0);
     border: 3px solid white;
     z-index: 9;
     border-radius: 1%;
@@ -441,8 +445,8 @@ th, td {
     position: fixed;
     width: 400px;
     top: 15%;
-    right: 35%;
-    left: 35%
+    left: 50%;
+    transform: translate(-50%, 0);
     border: 3px solid white;
     z-index: 9;
     border-radius: 1%;
@@ -600,28 +604,6 @@ a{
     .panel img{
         width: 50%;
     }
-    .form-popup{
-        display: none;
-        position: fixed;
-        width: 400px;
-        top: 15%;
-        right: 30%;
-        left: 30%;
-        border: 3px solid white;
-        z-index: 9;
-        border-radius: 1%;
-    }
-    .register-popup{
-        display: none;
-        position: fixed;
-        width: 400px;
-        bottom: 15%;
-        right: 30%;
-        left: 30%;
-        border: 3px solid white;
-        z-index: 9;
-        border-radius: 1%;
-    }
 }
 @media screen and (max-width: 890px){
     .header .logo img{
@@ -645,35 +627,13 @@ a{
     .update table .td2{
         width: 60%;
     }
-    .form-popup{
-        display: none;
-        position: fixed;
-        width: 400px;
-        top: 15%;
-        right: 25%;
-        left: 25%;
-        border: 3px solid white;
-        z-index: 9;
-        border-radius: 1%;
-    }
-    .register-popup{
-        display: none;
-        position: fixed;
-        width: 400px;
-        bottom: 15%;
-        right: 25%;
-        left: 25%;
-        border: 3px solid white;
-        z-index: 9;
-        border-radius: 1%;
-    }
 }
 @media screen and (max-width: 610px){
     .header .logo img{
-        margin-left:0px; 
         position: absolute;
         top: 0;
-        left: 25px;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
     .header nav{
         display: none;
@@ -693,10 +653,9 @@ a{
     .header a.icon{ 
         display: block;
         float: left;
-        padding-top: 30px;
         position: absolute;
-        top: 0;
-        left:10px;
+        top: 25px;
+        left:30px;
         cursor: pointer;
     }
     
@@ -721,28 +680,6 @@ a{
     .update table .td2{
         width: 65%;
     }
-    .form-popup{
-        display: none;
-        position: fixed;
-        width: 400px;
-        top: 15%;
-        right: 15%;
-        left: 15%;
-        border: 3px solid white;
-        z-index: 9;
-        border-radius: 1%;
-    }
-    .register-popup{
-        display: none;
-        position: fixed;
-        width: 400px;
-        bottom: 15%;
-        right: 15%;
-        left: 15%;
-        border: 3px solid white;
-        z-index: 9;
-        border-radius: 1%;
-    }
     .nav a{
         width: 60%
     }
@@ -760,22 +697,18 @@ a{
     position: relative;
     height: 230px;
   }
-  .header.responsive .icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
   .header.responsive .logo img{
     margin-left: 0px;
     position: absolute;
     top: 0;
-    left: 25px;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
   .header.responsive nav{
     display: block;
     position: absolute;
     top: 50px;
-    left: 20px;
+    left: 35px;
   }
   .header.responsive nav a{
     float: none;
@@ -814,26 +747,10 @@ a{
         width: 80%;
     }
     .form-popup{
-        display: none;
-        position: fixed;
         width: 300px;
-        top: 15%;
-        right: 15%;
-        left: 15%;
-        border: 3px solid white;
-        z-index: 9;
-        border-radius: 1%;
     }
     .register-popup{
-        display: none;
-        position: fixed;
         width: 300px;
-        bottom: 15%;
-        right: 15%;
-        left: 15%;
-        border: 3px solid white;
-        z-index: 9;
-        border-radius: 1%;
     }
     .nav .auth{
         width: 60%;

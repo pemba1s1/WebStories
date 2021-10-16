@@ -13,6 +13,7 @@ else
     <title><?php echo($title); ?></title>
     <meta name="keywords" content="Novel"/>
     <meta name="description" content="Read Novels"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="img/favicon.png">
@@ -101,7 +102,7 @@ else
                 ?>
                 
             </div>
-            <a class="icon" onclick="myFunction()"><img src="img/menu.png"></a>
+            <a class="icon" onclick="myFunction()"><i class='bx bx-menu bx-md' style='color:#ffffff'  ></i></i></a>
         </div>
     </div>
 <script>

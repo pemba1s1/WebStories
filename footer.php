@@ -33,7 +33,7 @@
                 <p>Discord</p></a>
             </div>
         </div>
-        <p style="margin-bottom: 0px;">Copyright &copy; <a href="">WebStories</a>.All rights reserved.</p>
+        <p style="margin-bottom: 0px;font-size: 15px">Copyright &copy; <a href="">WebStories</a>.All rights reserved.</p>
     </div>
 </body>
 </html>
