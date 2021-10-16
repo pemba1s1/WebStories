@@ -3,7 +3,7 @@ require "header.php";
 
 $novel_name=$_GET['novel_name'];
 $chapter_no=$_GET['chapter_no'];
-$sql="SELECT * from $novel_name where chapter_no='$chapter_no'";
+$sql="SELECT * from `$novel_name` where chapter_no='$chapter_no'";
 $result=mysqli_query($conn,$sql);
 
 if($result){

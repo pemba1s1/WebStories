@@ -43,7 +43,7 @@ require "header.php";
                 <th width="80%">Title</th>
             </thead>
             <?php
-            $sql="SELECT * from $novel_name ORDER BY chapter_no ASC";
+            $sql="SELECT * from `$novel_name` ORDER BY chapter_no ASC";
             $result=mysqli_query($conn,$sql);
             foreach($result as $key=>$novel){
 

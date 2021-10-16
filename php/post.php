@@ -16,7 +16,7 @@ if(isset($_POST['add'])){
     else{
         echo "fail1";
     }
-    $createNovel="CREATE TABLE $title
+    $createNovel="CREATE TABLE `$title`
     (
     ID int NOT NULL AUTO_INCREMENT,
     chapter_no int NOT NULL,
@@ -49,13 +49,14 @@ if(isset($_POST['post'])){
 }
 
 if(isset($_POST['update'])){
-    $novel_name=$_POST['novel_name'];
+    $novel_name=$_SESSION['novel_name'];
     $user_name=$_SESSION['user_name'];
     $chapter_no=$_POST['chapter_no'];
-    $chapter_title=$_POST['chapter_title'];
+    $chapter_title=mysqli_real_escape_string($conn,$_POST['chapter_title']);
+    echo $chapter_title;
     $dt = date('Y-m-d H:i:s'); 
-    $content=$_POST['content'];
-    $sql="INSERT into $novel_name (chapter_no,chapter_title,content,uploaded_at) values('$chapter_no','$chapter_title','$content','$dt')";
+    $content=mysqli_real_escape_string($conn,$_POST['content']);
+    $sql="INSERT into `$novel_name` (`chapter_no`,`chapter_title`,`content`,`uploaded_at`) values('$chapter_no','$chapter_title','$content','$dt')";
     $sql1="UPDATE novel SET updated_at='$dt' where novel_name='$novel_name'";
     $sql2="INSERT into time (updated_at,novel_name,chapter_no,user_name,chapter_name) values('$dt','$novel_name','$chapter_no','$user_name','$chapter_title')";
     $result2=mysqli_query($conn,$sql2);

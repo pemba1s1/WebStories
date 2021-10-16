@@ -12,7 +12,7 @@ if(!isset($_SESSION['login'])){
         <input type="text" class="form-space" name="title"></br>
         Summary:
         <textarea name="summary" id="" cols="30" rows="10"></textarea></br>
-        <input type="submit" value="Create" name="add" class="button1">
+        <input type="submit" value="Create" name="add" class="button1" style="width: 100px">
     </form>
 </div>
 
